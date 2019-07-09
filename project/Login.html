@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+    <div id="top">
+        <img src="img/15.png"/>
+   
+    </div>
+
+    <div id="main">
+        <img src="img/16.png"/>
+        <div class="register">
+            <h1>欢迎登陆</h1>
+            <input type="text" id="user" value="">
+            <i></i>
+            <input type="password" id="pass" value="">
+            <div class="check">
+                <input type="checkbox" id="chk"/>
+                <span>记住我</span>
+                <a href="#">忘记密码?</a>
+            </div>
+            <div class="enter">
+                <input type="button" id="btn" value="立即登录"/>
+                <span>还没有GO家居账号?</span>
+                <a href="#">立即注册></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="margin">
+            <div class="footer-t">
+                <a href="#">关于GO家具</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">引入地图</a><span>|</span>
+                <a href="#">代理地址</a><br />
+                <b>双方各子微服务活动不打算不成熟的补偿款斯巴达克城市达成撒</b><br />
+                <em>双方各子微服务活动不打算不成熟的补偿款斯巴达克城市达成撒</em>
+                <img src="img/10.png" />
+                <img src="img/10.png" />
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/ipt.js"></script>
+<script src="js/login.js"></script>
+<script>
+
+    var obtn = document.getElementById("btn");
+    var ochk = document.getElementById("chk");
+    var login = JSON.parse(getCookie("login"));
+    
+    obtn.onclick = function(){
+        var ouser = document.getElementById("user");
+        var opass = document.getElementById("pass");
+        if(ouser.value == login.user && opass.value == login.pass){
+            alert("登陆成功");
+        }else{
+            alert("登陆失败");
+        }
+    }
+
+    // removeCookie("login",{expires:0});
+
+    
+
+
+
+
+</script>
+</html>

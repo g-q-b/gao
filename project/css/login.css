@@ -1,0 +1,35 @@
+*{margin: 0;padding: 0;}
+
+#top{height: 117px;width: 100%;}
+#top img{margin:26px 0 0 112px;}
+
+#main{width: 1423px;height: 708px;background: #8868ab;}
+#main img{margin: 54px 0 0 102px;width: 400px;}
+#main .register{width: 750px;height: 460px;background: #fff;float: right;margin:38px 100px 0 0;}
+#main .register h1{font: 22px/58px "";margin-left: 40px;color: #66667a;}
+#main .register input#user{border: 0;width: 315px;height: 42px;border:1px solid #e8e8e8;padding-left:43px;margin-left: 40px;color: #d6c8c8;background: url(../img/17.png) no-repeat;background-position: 16px 13px;}
+#main .register input#pass{border: 0;width: 315px;height: 42px;border:1px solid #e8e8e8;padding-left:43px;margin:15px 0 0 40px;color: #d6c8c8;background: url(../img/18.png) no-repeat;background-position: 16px 13px;}
+#main .register .check input#chk{margin:30px 0 0 40px;}
+#main .register .check span{font-size: 12px;color:#999;}
+#main .register .check a{font-size: 12px;color:#999;margin-left: 240px;}
+#main .register .enter{width: 575px;height: 43px;margin: 15px 0 0 40px;}
+#main .register .enter input#btn{width: 360px;font: 14px/43px "";color: #fff;text-align: center;border: 0;background: #43cbb3;}
+#main .register .enter span{display: inline-block;font:12px/43px "";margin-left: 24px;color: #999;}
+#main .register .enter a{display: inline-block;font:12px/43px "";margin-left: 4px;color: #43cbb3;}
+
+#footer{height: 160px;width: 100%;background: #333333;}
+#footer .margin{height: 160px;width: 1200px;margin: 0 auto;}
+#footer .margin .footer-t a{color: #d0c6cf;font: 12px/4 "";}
+#footer .margin .footer-t span{margin: 0 14px;color: #d0c6cf;font: 12px/4 "";}
+#footer .margin .footer-t b{color: #d0c6cf;font-size: 12px;}
+#footer .margin .footer-t em{color: #d0c6cf;display: inline-block;margin-top: 20px;font-size: 12px;}
+#footer .margin .footer-t img{float: right;margin: -46px 20px 0 0;}
+
+
+
+
+
+
+
+
+
