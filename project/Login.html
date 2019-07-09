@@ -21,13 +21,13 @@
             <input type="password" id="pass" value="">
             <div class="check">
                 <input type="checkbox" id="chk"/>
-                <span>记住我</span>
+                <input type="button" id="btn1" value="注销" />
                 <a href="#">忘记密码?</a>
             </div>
             <div class="enter">
                 <input type="button" id="btn" value="立即登录"/>
                 <span>还没有GO家居账号?</span>
-                <a href="#">立即注册></a>
+                <a href="http://localhost:8181/project/resiger.html">立即注册></a>
             </div>
         </div>
     </div>
@@ -55,24 +55,26 @@
 
     var obtn = document.getElementById("btn");
     var ochk = document.getElementById("chk");
+    var ospan = document.querySelector(".check input#btn1")
     var login = JSON.parse(getCookie("login"));
     
     obtn.onclick = function(){
         var ouser = document.getElementById("user");
         var opass = document.getElementById("pass");
         if(ouser.value == login.user && opass.value == login.pass){
-            alert("登陆成功");
+            setCookie("login",JSON.stringify({user:ouser.value,pass:opass.value,code:1}),{expires:7});
+            window.location.href = "http://localhost:8181/project/index.html";
         }else{
             alert("登陆失败");
         }
     }
 
-    // removeCookie("login",{expires:0});
-
-    
-
-
-
+    ospan.onclick = function(){
+        if(ochk.checked){
+            removeCookie("login",{expires:0});
+            alert("注销成功")
+        }
+    }
 
 </script>
 </html>

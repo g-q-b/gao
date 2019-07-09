@@ -18,6 +18,7 @@
 #top .margin .top-right{float: right;}
 #top .margin .top-right ul{}
 #top .margin .top-right ul li{float: left;margin-left: 20px;font: 12px/20px "";}
+#top .margin .top-right ul li.active{display: none;}
 
 #nav{width: 100%;height:150px;border-bottom: 2px solid #43cbb3;}
 #nav  .margin{width: 1200px;height:150px;margin: 0 auto;}
@@ -86,6 +87,7 @@
 #image .image-nav .margin1 ul{width: 1010px;height: 162px;float: right;}
 #image .image-nav .margin1 ul li{width: 326px;height: 136px;margin:10px 0 10px 10px;float: left;}
 #image .image-nav .margin1 ul li img{width: 326px;height: 136px;}
+#image .image-nav .margin1 ul li:hover img{width: 326px;height: 136px;margin-left: 2px;}
 
 #main{width: 100%;position: relative;height: 4750px;}
 #main  .beijin{background: #F2F2F2;position: absolute;top:652px;width: 100%;height: 746px;z-index: -1;}
@@ -100,7 +102,7 @@
 #main .margin .quality .bottom ul{height: 564px;width: 1200px;}
 #main .margin .quality .bottom ul li{height: 564px;width: 370px;float: left;}
 #main .margin .quality .bottom ul li.te{margin: 0 45px;}
-#main .margin .quality .bottom ul li img{width: 370px;height: 370px;margin-bottom: 19px;}
+#main .margin .quality .bottom ul li img:hover{width: 370px;height: 370px;margin-bottom: 19px;transform: scale(1.1);transition: 0.8s;overflow: hidden;}
 #main .margin .quality .bottom ul li p{font: 16px/34px "";color: #C6C8CA;text-align: center;}
 #main .margin .quality .bottom ul li h2{font:800 24px/54px "";color: #000000;text-align: center;}
 
@@ -119,6 +121,7 @@
 #main  .margin .recommend .bottom .bottom-l ul{display: flex;justify-content: space-between;flex-wrap:wrap;}
 #main  .margin .recommend .bottom .bottom-l ul li{width: 280px;height: 258px;background: #fff;margin-top: 24px;}
 #main  .margin .recommend .bottom .bottom-l ul li img.img1{width: 280px;height: 150px;}
+#main  .margin .recommend .bottom .bottom-l ul li:hover img.img1{opacity: 0.8;}
 #main  .margin .recommend .bottom .bottom-l ul li img.img2{width: 96px;height: 48px;margin-top: 29px;margin-left: 20px;}
 #main  .margin .recommend .bottom .bottom-l ul li p{display: inline-block;margin-left: 20px;font-size: 18px;margin-top: 30px;}
 #main  .margin .recommend .bottom .bottom-l ul li .te{margin-left: 118px;margin-top: -12px;}
@@ -150,6 +153,7 @@
 #main  .margin .hot .bottom .bottom-l ul{display: flex;justify-content: space-between;flex-wrap:wrap;}
 #main  .margin .hot .bottom .bottom-l ul li{width: 288px;height: 316px;background: #fff;margin-top: 24px;}
 #main  .margin .hot .bottom .bottom-l ul li img.img1{width: 288px;height: 216px;}
+#main  .margin .hot .bottom .bottom-l ul li:hover img.img1{opacity: 0.8;}
 #main  .margin .hot .bottom .bottom-l ul li p{width: 280px;height: 48px;margin-top: 10px;font-size: 14px;}
 #main  .margin .hot .bottom .bottom-l ul li span{display: inline-block;font-size: 18px;color: #9cd3b3;}
 #main  .margin .hot .bottom .bottom-r{width: 280px;height: 690px;border:1px solid #666666;float: right;margin-top:78px;}
@@ -171,8 +175,9 @@
 #main  .margin .hot .sale .sale-top a.a1{display: inline-block;text-align:center;width: 176px;height: 20px;background: url(../img/8.png) no-repeat;margin-left: 694px;}
 #main  .margin .hot .sale .sale-top a.a2{display: inline-block;margin-left: 136px;padding: 3px;border: 1px solid #D6D8D9;border-radius: 2px;float: right;}
 #main  .margin .hot .sale .sale-bottom ul{width:1200px;height: 275px;display: flex;justify-content: space-around;flex-wrap: wrap;margin-top: 15px;}
-#main  .margin .hot .sale .sale-bottom ul li{width:287px;height: 130px;border: 1px solid #B6B6B6;}
+#main  .margin .hot .sale .sale-bottom ul li{width:287px;height: 130px;}
 #main  .margin .hot .sale .sale-bottom ul li img{width:287px;height: 130px;}
+#main  .margin .hot .sale .sale-bottom ul li:hover img{margin-left:2px;}
 
 #main .margin .activity{width: 1200px;margin-top: 542px;height: 1884px;}
 #main .margin .activity .top h1{text-align: center;font: 24px/90px "";color:#000;}
@@ -184,12 +189,14 @@
 #main .margin .activity .nav ul.ul3 li{width: 281px;height: 172px;}
 #main .margin .activity .nav ul.ul3 li p{font: 14px/48px "";}
 #main .margin .activity .nav ul.ul3 li img{width: 281px;height: 124px;}
+#main .margin .activity .nav ul.ul3 li:hover img{opacity: 0.8;}
 #main .margin .activity .nav .nav-r{float: right;width: 304px;height: 333px;border: 1px solid #C6C8CA;}
 #main .margin .activity .nav .nav-r .top{height: 31px;width: 304px;position: relative;}
 #main .margin .activity .nav .nav-r .top span{font-size: 12px;position: absolute;bottom: 0;left: 24px;}
 #main .margin .activity .nav .nav-r .top a{position: absolute;bottom: 0;right: 5px;display: inline-block;margin-left: 136px;padding: 3px;border: 1px solid #D6D8D9;border-radius: 2px;}
 #main .margin .activity .nav .nav-r ul.ul4{margin-left: 24px;margin-top: 9px;}
 #main .margin .activity .nav .nav-r ul.ul4 li{font: 12px/34px "";white-space:nowrap; overflow:hidden;text-overflow:ellipsis;}
+#main .margin .activity .nav .nav-r ul.ul4 li:hover{color: #43CBB3;}
 #main .margin .activity .shows{width: 1200px;height: 542px;margin-top: 360px;}
 #main .margin .activity .shows .shows-top{width: 1200px;height: 60px;}
 #main .margin .activity .shows .shows-top span{float: left;font-size:14px;display: inline-block;width: 100px;height: 60px;text-align: center;background: url(../img/7.png) no-repeat;}
@@ -198,6 +205,7 @@
 #main .margin .activity .shows ul{width: 1200px;height: 480px;display: flex;justify-content: space-around;flex-wrap: wrap;}
 #main .margin .activity .shows ul li{width: 230px;height: 239px;}
 #main .margin .activity .shows ul li img{width: 230px;height: 180px;}
+#main .margin .activity .shows ul li:hover img{transform: scale(1.1);overflow: hidden;width: 230px;height: 180px;}
 #main .margin .activity .shows ul li p{font: 16px/50px "";text-align: center;}
 #main .margin .activity .mall{width: 1200px;height: 542px;margin-top: 22px;}
 #main .margin .activity .mall .mall-top{width: 1200px;height: 60px;}
@@ -215,6 +223,7 @@
 #main .margin .activity .park .box{height: 280px;width: 1200px;position: relative;overflow: hidden;}
 #main .margin .activity .park .box .imgbox{width: 1200px;height: 280px;}
 #main .margin .activity .park .box .imgbox img{width: 1200px;height: 398px;position: absolute;left: 1200px;top:0;}
+#main .margin .activity .park .box .imgbox img:hover{opacity: 0.8;}
 #main .margin .activity .park .box .imgbox img:nth-child(1){left: 0;}
 #main .margin .activity .park .box .btn #btnL{position: absolute;left: 0;top: 130px;width: 40px;height: 40px;background: rgba(0,0,0,0.5);border: 0;color: #fff;}
 #main .margin .activity .park .box .btn #btnR{position: absolute;right: 0;top: 130px;width: 40px;height: 40px;background: rgba(0,0,0,0.5);border: 0;color: #fff;}

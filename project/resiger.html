@@ -58,8 +58,10 @@
 
     obtn.onclick = function(){
 			if(ochk.checked){
-				setCookie("login",JSON.stringify({user:ouser.value,pass:opass.value}),{expires:7});
+				setCookie("login",JSON.stringify({user:ouser.value,pass:opass.value,code:0}),{expires:7});
 			}
+            alert("注册成功！");
+            window.location.href = "http://localhost:8181/project/Login.html";
         }
         
 </script>
