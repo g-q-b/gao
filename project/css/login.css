@@ -10,7 +10,8 @@
 #main .register input#user{border: 0;width: 315px;height: 42px;border:1px solid #e8e8e8;padding-left:43px;margin-left: 40px;color: #d6c8c8;background: url(../img/17.png) no-repeat;background-position: 16px 13px;}
 #main .register input#pass{border: 0;width: 315px;height: 42px;border:1px solid #e8e8e8;padding-left:43px;margin:15px 0 0 40px;color: #d6c8c8;background: url(../img/18.png) no-repeat;background-position: 16px 13px;}
 #main .register .check input#chk{margin:30px 0 0 40px;}
-#main .register .check span{font-size: 12px;color:#999;}
+#main .register .check input#btn1{font-size: 16px;border: 0;background: skyblue;padding: 5px 10px;border-radius: 4px;color: #fff;}
+#main .register .check span{font-size: 12px;color:#999;display: inline-block;padding: 5px 10px;background: skyblue;border-radius: 4px;color: #fff;}
 #main .register .check a{font-size: 12px;color:#999;margin-left: 240px;}
 #main .register .enter{width: 575px;height: 43px;margin: 15px 0 0 40px;}
 #main .register .enter input#btn{width: 360px;font: 14px/43px "";color: #fff;text-align: center;border: 0;background: #43cbb3;}

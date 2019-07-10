@@ -66,9 +66,9 @@
 					marginLeft:40,
 					border:"1px solid black",
 					borderRadius:"50%",
-					background:"#41cdb3"
+					background:"#fff"
 				}).eq(this.index).css({		//设置当前显示的图片对应的span的样式
-					background:"#41cdb3"
+					background:"#fff"
 				})
 				
 //				L6.开始做list的事件

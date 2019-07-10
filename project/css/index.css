@@ -6,7 +6,7 @@
 #gps ul li a img{margin:8px 0 0 12px;}
 #gps ul li a span{display: block;text-align: center;margin-top: 10px;}
 
-#floors{width: 40px;height: 251px;position: fixed;top: 300px;left: 0;}
+#floors{width: 40px;height: 251px;position: fixed;top: 300px;left: 0;z-index: 99;}
 #floors .btns{width: 40px;height: 251px;border: 1px solid #C6C8CA;}
 #floors .btns li{font: 16px/50px "";text-align: center;color: #43cbb3;width: 40px;}
 #floors .btns li.te{color: black;font-weight: 800;}
